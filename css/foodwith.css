@@ -1,0 +1,98 @@
+@charset "utf-8";
+
+/* header */
+header {
+  position: fixed;
+  width: 100%;
+  height: 66px;
+  background-color: rgba(64, 64, 64, 75%);
+  display: flex;
+  justify-content: center;
+  z-index: 10;
+}
+
+/* header logo */
+.header-logo {
+  position: relative;
+  right: 25%;
+  top: 30%;
+  background-image: url(../img/logo.png);
+  display: block;
+  width: 106px;
+  height: 22px;
+}
+
+/* section home */
+#home {
+  width: 100%;
+  height: 750px;
+  background-color: #fff;
+}
+
+#home-container {
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/section_invite.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+/* section creator */
+#creator {
+  width: 100%;
+  height: 822px;
+  background-color: #f9939d;
+}
+
+#creator-container {
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/section_creator.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+/* section store */
+#store {
+  width: 100%;
+  height: 1084px;
+  background-color: #d5e43f;
+}
+
+#store-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/section_store.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.store-items {
+  position: relative;
+  top: 30%;
+  width: 980px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.store-items > li > a {
+  display: block;
+  width: 230px;
+  height: 230px;
+}
+
+.store-discount {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.apple {
+  background-image: url(../img/thumbnail_apple.jpg);
+}
