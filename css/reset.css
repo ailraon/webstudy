@@ -7,6 +7,12 @@ body {
   margin: 0;
 }
 
+h3,
+h4,
+p {
+  margin: 0;
+}
+
 ol,
 ul,
 li,
@@ -14,6 +20,10 @@ details {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 /* blind class */
