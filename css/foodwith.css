@@ -6,16 +6,21 @@ header {
   width: 100%;
   height: 66px;
   background-color: rgba(64, 64, 64, 75%);
+  z-index: 10;
   display: flex;
   justify-content: center;
-  z-index: 10;
+}
+
+.logo-box {
+  margin: 0px 20px;
+  width: 1000px;
+  height: 100%;
+  display: flex;
+  align-items: center;
 }
 
 /* header logo */
 .header-logo {
-  position: relative;
-  right: 25%;
-  top: 30%;
   background-image: url(../img/logo.png);
   display: block;
   width: 106px;
@@ -23,13 +28,13 @@ header {
 }
 
 /* section home */
-#home {
+.home {
   width: 100%;
   height: 750px;
   background-color: #fff;
 }
 
-#home-container {
+.home-container {
   width: 100%;
   height: 100%;
   background-image: url(../img/section_invite.jpg);
@@ -38,13 +43,13 @@ header {
 }
 
 /* section creator */
-#creator {
+.creator {
   width: 100%;
   height: 822px;
   background-color: #f9939d;
 }
 
-#creator-container {
+.creator-container {
   width: 100%;
   height: 100%;
   background-image: url(../img/section_creator.jpg);
@@ -54,13 +59,13 @@ header {
 }
 
 /* section store */
-#store {
+.store {
   width: 100%;
   height: 1084px;
   background-color: #d5e43f;
 }
 
-#store-container {
+.store-container {
   display: flex;
   justify-content: center;
   width: 100%;
@@ -162,13 +167,13 @@ header {
 }
 
 /* section recipe */
-#recipe {
+.recipe {
   width: 100%;
   height: 1030px;
   background-color: #b893f9;
 }
 
-#recipe-container {
+.recipe-container {
   width: 100%;
   height: 100%;
   background-image: url(../img/pattern_recipe.png);
@@ -217,13 +222,13 @@ header {
 }
 
 /* FAQ */
-#FAQ {
+.FAQ {
   width: 100%;
   background-color: #fff;
   margin: 100px 0px;
 }
 
-#FAQ-container {
+.FAQ-container {
   width: 100%;
   height: 100%;
   display: flex;
@@ -280,13 +285,23 @@ header {
 .question-uparrow {
   background-image: url(../img/icon_arrow_up.gif);
   background-repeat: no-repeat;
-  background-position: bottom;
+  background-position-x: center;
+  background-position-y: 38px;
   width: 70px;
-  height: 50px;
+  height: 100%;
+}
+
+.question-downarrow {
+  background-image: url(../img/icon_arrow_down.gif);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: 38px;
+  width: 70px;
+  height: 100%;
 }
 
 .answer-box {
-  display: flex;
+  display: none;
   background-color: #f7f8fa;
 }
 
@@ -294,6 +309,7 @@ header {
   background-image: url(../img/icon_answer.gif);
   background-repeat: no-repeat;
   background-position: bottom;
+  display: block;
   width: 60px;
   height: 50px;
 }
@@ -309,8 +325,8 @@ header {
   line-height: 28px;
 }
 
-.closed {
-  display: none;
+.opened {
+  display: flex;
 }
 
 /* top button */
@@ -326,7 +342,7 @@ header {
 }
 
 /* footer */
-#footer {
+.footer {
   width: 100%;
   height: 80px;
   background-color: #e0e4eb;
